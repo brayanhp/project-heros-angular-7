@@ -1,0 +1,17 @@
+<h1>{{heroe.nombre | uppercase}} <small>({{heroe.aparicion | date: 'y'}})</small></h1>
+<hr>
+
+<div class="row">
+
+  <div class="col-lg-4">
+    <img [src] = "heroe.img" class="img-fluid" /><br>
+    <a class="btn btn-block btn-outline-danger" [routerLink] = "['/heroes']">Regresar</a>
+  </div>
+
+  <div class="col-lg-8">
+
+    <p>{{heroe.bio}}</p>
+
+  </div>
+
+</div>
